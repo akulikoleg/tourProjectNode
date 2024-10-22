@@ -8,7 +8,9 @@
     "start:prod": "NODE_ENV=production nodemon server.js",
     "debug": " ndb server.js",
     "watch:js": "parcel watch ./public/js/index.js --out-dir ./public/js --out-file bundle.js --public-url .",
-    "build:js": "parcel build ./public/js/index.js --out-dir ./public/js --out-file bundle.js --public-url ."
+    "build:js": "parcel build ./public/js/index.js --out-dir ./public/js --out-file bundle.js --public-url .",
+    "database:delete": "node dev-data/data/import-dev-data.js --delete ",
+    "database:import": "node dev-data/data/import-dev-data.js --import"
   },
   "author": "",
   "license": "ISC",
