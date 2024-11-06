@@ -10,7 +10,7 @@ router.get('/logout', authController.logout);
 
 router.post('/forgotPassword', authController.forgotPassword);
 router.patch('/resetPassword/:token', authController.resetPassword);
-//PRotect routes after this middleware
+//Protect routes after this middleware
 router.use(authController.protect);
 
 router.get('/me', userController.getMe, userController.getUser);
